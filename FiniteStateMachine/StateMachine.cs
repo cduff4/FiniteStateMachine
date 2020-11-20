@@ -8,12 +8,12 @@ namespace FiniteStateMachine
     /// </summary>
     /// <remarks>
     /// <para>The derived class should have an enum of States.</para>
-    /// <para>The derived class should have an enum of Actions.</para>
+    /// <para>The derived class should have an enum of Events.</para>
     /// <para>The derived class should intialize the list 
     /// of <see cref="StateTransition"/>s in its constructor.</para>
     /// </remarks>
-    /// <typeparam name="T1">State enum Type</typeparam>
-    /// <typeparam name="T2">Action enum Type</typeparam>
+    /// <typeparam name="T1">States enum</typeparam>
+    /// <typeparam name="T2">Events enum</typeparam>
     public class StateMachine<T1, T2>
         where T1 : struct, IConvertible
         where T2 : struct, IConvertible
